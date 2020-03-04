@@ -10,10 +10,7 @@ import Category from './Category';
 
 const useStyles = makeStyles(theme => ({
   paper: {
-    position: "absolute",
-    width: 400,
-    left: "35% !important",
-    top: "30% !important",
+ 
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
@@ -69,8 +66,8 @@ function BlockList() {
   return (
     <div style={{ marginTop: "50px" }}>
       <Grid container spacing={2}>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={8}>
+   
+        <Grid item xs={12}>
           <Paper elevation={4}>
             <Typography
               style={{
@@ -91,15 +88,19 @@ function BlockList() {
               Create lists, like a suspicious email domain block list or a
               trusted IP address allow list, to reference in your rules.
             </Typography>
-            <Button
+        
+          </Paper>
+        </Grid>
+      
+        <Button
               onClick={handleOpen}
-              style={{ marginLeft: "870px", marginTop: "-34px" }}
               variant="outlined"
+              style={{marginLeft:6}}
             >
               Add List
             </Button>
-          </Paper>
-        </Grid>
+      
+           
       </Grid>
       <br />
       <br />
