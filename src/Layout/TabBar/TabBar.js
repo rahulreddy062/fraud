@@ -69,6 +69,7 @@ export default function TabBar() {
           indicatorColor="primary"
           textColor="primary"
           scrollButtons="auto"
+          variant="scrollable"
           aria-label="scrollable auto tabs example"
         >
           

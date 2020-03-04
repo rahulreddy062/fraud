@@ -28,12 +28,12 @@ export default function Insights() {
         <br/>
         <br/>
       <Grid container spacing={3}>
-      <Grid item xs={8}>
+      <Grid item xs={12} md={8}>
   <Card className={classes.paper}>
       <LineChart style = {{boxShadow:"3px 3px 3px #9E9E9E"}}/>
       </Card>
         </Grid>
-          <Grid item xs ={4}>
+          <Grid item xs={12} md={8}>
             <Card style={{paddingBottom:"4px",paddingTop:"28px"}}>
               <PieChart />
               </Card>
@@ -41,10 +41,10 @@ export default function Insights() {
       </Grid>
       <br/>
       <Grid container spacing={3}>
-      <Grid item xs={8}>
+      <Grid item xs={12} md={4}>
         <PatternChart/>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
       
         <FraudInsights style = {{boxShadow:"3px 3px 3px #9E9E9E"}}/>
         
